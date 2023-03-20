@@ -20,12 +20,16 @@ public class NotificationsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         NotificationsViewModel notificationsViewModel =
                 new ViewModelProvider(this).get(NotificationsViewModel.class);
+        RecipeViewModel recipeViewModel =
+                new ViewModelProvider(this).get(RecipeViewModel.class);
 
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView recipe1 = binding.textRecipe1;
+        final TextView recipe2 = binding.textRecipe2;
+        notificationsViewModel.getText().observe(getViewLifecycleOwner(), recipe1::setText);
+        recipeViewModel.getText().observe(getViewLifecycleOwner(), recipe2::setText);
         return root;
     }
 
