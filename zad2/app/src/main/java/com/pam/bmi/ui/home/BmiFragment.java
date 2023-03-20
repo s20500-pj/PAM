@@ -10,14 +10,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.pam.bmi.R;
-import com.pam.bmi.databinding.FragmentHomeBinding;
+import com.pam.bmi.databinding.FragmentBmiBinding;
 
-public class HomeFragment extends Fragment {
+public class BmiFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentBmiBinding binding;
 
     private EditText weightInput;
     private EditText heightInput;
@@ -27,7 +26,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentBmiBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         weightInput = root.findViewById(R.id.weight_input);

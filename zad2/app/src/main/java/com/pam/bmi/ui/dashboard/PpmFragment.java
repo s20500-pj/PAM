@@ -10,14 +10,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.pam.bmi.R;
-import com.pam.bmi.databinding.FragmentDashboardBinding;
+import com.pam.bmi.databinding.FragmentPpmBinding;
 
-public class DashboardFragment extends Fragment {
+public class PpmFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentPpmBinding binding;
 
     private EditText weightInput;
     private EditText heightInput;
@@ -28,7 +27,7 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentPpmBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         weightInput = root.findViewById(R.id.weight_input);

@@ -10,26 +10,26 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.pam.bmi.databinding.FragmentNotificationsBinding;
+import com.pam.bmi.databinding.FragmentReceipesBinding;
 
-public class NotificationsFragment extends Fragment {
+public class ReceipesFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentReceipesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
-        RecipeViewModel recipeViewModel =
-                new ViewModelProvider(this).get(RecipeViewModel.class);
+        ReceiveTwoViewModel receiveTwoViewModel =
+                new ViewModelProvider(this).get(ReceiveTwoViewModel.class);
+        RecipeOneViewModel recipeOneViewModel =
+                new ViewModelProvider(this).get(RecipeOneViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentReceipesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView recipe1 = binding.textRecipe1;
         final TextView recipe2 = binding.textRecipe2;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), recipe1::setText);
-        recipeViewModel.getText().observe(getViewLifecycleOwner(), recipe2::setText);
+        receiveTwoViewModel.getText().observe(getViewLifecycleOwner(), recipe1::setText);
+        recipeOneViewModel.getText().observe(getViewLifecycleOwner(), recipe2::setText);
         return root;
     }
 
