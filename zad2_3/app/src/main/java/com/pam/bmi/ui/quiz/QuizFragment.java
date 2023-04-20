@@ -123,7 +123,7 @@ public class QuizFragment extends Fragment {
 
     private void initiateQuestions() {
         questionList = new ArrayList<>();
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 6; i++) {
             Question question = new Question(
                     getResources().getString(getResources().getIdentifier("question_" + i, "string", getActivity().getPackageName())),
                     new String[]{

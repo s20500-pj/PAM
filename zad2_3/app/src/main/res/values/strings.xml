@@ -17,6 +17,7 @@
     <string name="question_3">Which vitamin is essential for good vision and a healthy immune system?</string>
     <string name="question_4">How many essential amino acids are there?</string>
     <string name="question_5">Which type of fat is considered the healthiest for consumption?</string>
+    <string name="question_6">Who will win Champions League?</string>
 
     <string name="q1_answer_a">Running</string>
     <string name="q1_answer_b">Weightlifting</string>
@@ -42,4 +43,9 @@
     <string name="q5_answer_b">Trans fat</string>
     <string name="q5_answer_c">Unsaturated fat</string>
     <string name="q5_answer_correct_index">2</string>
+
+    <string name="q6_answer_a">Real Madrid</string>
+    <string name="q6_answer_b">Man City</string>
+    <string name="q6_answer_c">AC Milan</string>
+    <string name="q6_answer_correct_index">1</string>
 </resources>
