@@ -22,4 +22,16 @@
         android:name="com.pam.bmi.ui.notifications.ReceipesFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_receipes" />
+
+    <fragment
+        android:id="@+id/navigation_quiz"
+        android:name="com.pam.bmi.ui.quiz.QuizFragment"
+        android:label="@string/title_quiz"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/navigation_graph"
+        android:name="com.pam.bmi.ui.graph.GraphFragment"
+        android:label="@string/title_graph"
+        tools:layout="@layout/fragment_graph" />
 </navigation>

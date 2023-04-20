@@ -4,4 +4,42 @@
     <string name="title_home">BMI</string>
     <string name="title_dashboard">Calories</string>
     <string name="title_notifications">Recipes</string>
+    <string name="title_graph">BMI graph</string>
+    <string name="title_quiz">QUIZ</string>
+    <string name="quiz_question">Question</string>
+    <string name="quiz_option_1">Option 1</string>
+    <string name="quiz_option_2">Option 2</string>
+    <string name="quiz_option_3">Option 3</string>
+    <string name="quiz_submit">Submit</string>
+
+    <string name="question_1">Which exercise is beneficial for improving cardiovascular fitness?</string>
+    <string name="question_2">What is the primary function of carbohydrates in our diet?</string>
+    <string name="question_3">Which vitamin is essential for good vision and a healthy immune system?</string>
+    <string name="question_4">How many essential amino acids are there?</string>
+    <string name="question_5">Which type of fat is considered the healthiest for consumption?</string>
+
+    <string name="q1_answer_a">Running</string>
+    <string name="q1_answer_b">Weightlifting</string>
+    <string name="q1_answer_c">Yoga</string>
+    <string name="q1_answer_correct_index">0</string>
+
+    <string name="q2_answer_a">Energy</string>
+    <string name="q2_answer_b">Cognitive function</string>
+    <string name="q2_answer_c">Bone health</string>
+    <string name="q2_answer_correct_index">0</string>
+
+    <string name="q3_answer_a">Vitamin A</string>
+    <string name="q3_answer_b">Vitamin D</string>
+    <string name="q3_answer_c">Vitamin K</string>
+    <string name="q3_answer_correct_index">0</string>
+
+    <string name="q4_answer_a">9</string>
+    <string name="q4_answer_b">20</string>
+    <string name="q4_answer_c">11</string>
+    <string name="q4_answer_correct_index">0</string>
+
+    <string name="q5_answer_a">Saturated fat</string>
+    <string name="q5_answer_b">Trans fat</string>
+    <string name="q5_answer_c">Unsaturated fat</string>
+    <string name="q5_answer_correct_index">2</string>
 </resources>
