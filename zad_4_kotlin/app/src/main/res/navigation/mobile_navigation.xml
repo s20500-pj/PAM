@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.pam.bmi.ui.home.BmiFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_bmi" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.pam.bmi.ui.dashboard.PpmFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_ppm" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.pam.bmi.ui.notifications.ReceipesFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_receipes" />
+
+    <fragment
+        android:id="@+id/navigation_quiz"
+        android:name="com.pam.bmi.ui.quiz.QuizFragment"
+        android:label="@string/title_quiz"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/navigation_graph"
+        android:name="com.pam.bmi.ui.graph.GraphFragment"
+        android:label="@string/title_graph"
+        tools:layout="@layout/fragment_graph" />
+</navigation>
